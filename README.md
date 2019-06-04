@@ -5,14 +5,14 @@ Show the counter (the number increment and decrement) to practice React Redux.
 To manage counter number, used Redux actions.
 
 
- --  Redux Actions
+> Redux Actions 
 
  
-1. install
+<b> 1. install </b>
        
        npm install --save redux-actions
 
-2. createActions
+<b> 2. createActions </b>
 
 Wraps an action creator so that its return value is the payload of a Flux Standard Action.
 
@@ -32,7 +32,7 @@ Calling createAction with a type will return an action creator for dispatching a
       increment(10); // { type: 'INCREMENT', payload: 10 }
       decrement([1, 42]); // { type: 'DECREMENT', payload: [1, 42] }
       
-3. handleActions
+<b> 3. handleActions </b>
       
 Wraps a reducer so that it only handles Flux Standard Actions of a certain type.
 
@@ -48,7 +48,7 @@ Wraps a reducer so that it only handles Flux Standard Actions of a certain type.
         defaultState
       );
       
-4. combineActions
+<b> 4. combineActions </b>
 
 Combine any number of action types or action creators. 
 
@@ -58,7 +58,7 @@ Combine any number of action types or action creators.
 - combineActions(...types)
 
 
-5. Example for usage all actions 
+<b> 5. Example for usage all actions </b>
 
             import { createActions, handleActions, combineActions } from 'redux-actions';
 
