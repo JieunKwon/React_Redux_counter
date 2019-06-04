@@ -14,10 +14,11 @@ To
 
 2. createAction
 
-createAction 
-​createAction(type) 
-​createAction(type, payloadCreator) 
-​createAction(type, payloadCreator, metaCreator)
+-createAction(type) 
+
+-createAction(type, payloadCreator) 
+
+-createAction(type, payloadCreator, metaCreator)
 
 Calling createAction with a type will return an action creator for dispatching actions. 
 
