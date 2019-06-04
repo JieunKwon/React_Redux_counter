@@ -1,11 +1,11 @@
 # React_Redux_counter
 
-Show the simple counter to practice React Redux.
+Show the counter (the number increment and decrement) to practice React Redux.
 
-To 
+To manage counter number, used Redux actions.
 
 
-> Redux Actions
+ --  Redux Actions
 
  
 1. install
