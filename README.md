@@ -12,13 +12,15 @@ To
        
        npm install --save redux-actions
 
-2. createAction
+2. createActions
 
--createAction(type) 
+Wraps an action creator so that its return value is the payload of a Flux Standard Action.
 
--createAction(type, payloadCreator) 
+- createAction(type) 
 
--createAction(type, payloadCreator, metaCreator)
+- createAction(type, payloadCreator) 
+
+- createAction(type, payloadCreator, metaCreator)
 
 Calling createAction with a type will return an action creator for dispatching actions. 
 
@@ -30,9 +32,33 @@ Calling createAction with a type will return an action creator for dispatching a
       increment(10); // { type: 'INCREMENT', payload: 10 }
       decrement([1, 42]); // { type: 'DECREMENT', payload: [1, 42] }
       
-3. handleAction
+3. handleActions
       
-2. Usage all actions 
+Wraps a reducer so that it only handles Flux Standard Actions of a certain type.
+
+- handleAction(type, reducer, defaultState)
+
+- handleAction(type, reducerMap, defaultState)
+
+      handleAction(
+        'APP/COUNTER/INCREMENT',
+        (state, action) => ({
+          counter: state.counter + action.payload.amount
+        }),
+        defaultState
+      );
+      
+4. combineActions
+
+Combine any number of action types or action creators. 
+
+'types' is a list of positional arguments which can be action type strings, symbols, or action creators.
+
+
+- combineActions(...types)
+
+
+5. Example for usage all actions 
 
             import { createActions, handleActions, combineActions } from 'redux-actions';
 
@@ -58,9 +84,9 @@ Calling createAction with a type will return an action creator for dispatching a
             export default reducer;
 
 
-1. src/store/modules/counter.js
+> This counter is used createAction and handleAction in src/store/modules/counter.js
 
-      For state of counter, used handleActions instead of switch.
+For state of counter, can use handleAction instead of switch.
       
         // If use switch, do action according to action type; increment and decrement
  
