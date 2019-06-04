@@ -111,10 +111,17 @@ For state of counter, can use handleAction instead of switch.
 
        // If use handleAction
        
-        import { handleAction } from 'redux-actions';
+        import { createAction, handleAction } from 'redux-actions';
         
         ...
         
+        export const increment = createAction(INCREMENT);
+        export const decrement = createAction(DECREMENT);
+
+        const initialState = {
+          number:0
+        };
+
         export default handleActions({
           [INCREMENT]: (state, action) => {
             return { number: state.number + 1 };
