@@ -84,7 +84,7 @@ Combine any number of action types or action creators.
             export default reducer;
 
 
-> This counter is used createAction and handleAction in src/store/modules/counter.js
+> This counter app is used createAction and handleAction in src/store/modules/counter.js
 
 For state of counter, can use handleAction instead of switch.
       
