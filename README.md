@@ -1,8 +1,8 @@
 # React_Redux_counter
 
-Show the counter (the number increment and decrement) to practice React Redux.
+This app shows the counter, the number increment and decrement, to practice React Redux.
 
-To manage counter number, used Redux actions.
+To manage the counter number, this is used Redux Actions.
 
 
 > Redux Actions 
