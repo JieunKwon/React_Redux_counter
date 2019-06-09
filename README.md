@@ -131,3 +131,6 @@ For state of counter, can use handleAction instead of switch.
           } 
         }, initialState);
 
+> Show the app with DevTools of Chrome
+
+<img src="img/counter.PNG" width="600px">
