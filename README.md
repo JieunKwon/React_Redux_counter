@@ -2,7 +2,7 @@
 
 This app shows the counter, the number increment and decrement, to practice React Redux.
 
-To manage the counter number, this is used Redux Actions.
+To handle the counter number, this is used Redux Actions.
 
 
 > Redux Actions 
