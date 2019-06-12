@@ -1,4 +1,4 @@
-# React_Redux_counter
+# Counter - React Redux
 
 This app shows the counter, the number increment and decrement, to practice React Redux.
 
