@@ -133,6 +133,6 @@ For state of counter, can use handleAction instead of switch.
 
 > Show the app 
 
-Using DevTools of Chrome, we can see status of number state 
+Using DevTools of Chrome, we can see counter state change
 
 <img src="img/counter.PNG" width="600px">
