@@ -1,0 +1,13 @@
+.app-template {
+  height: 100vh;
+  display: flex;
+}
+
+.counter {
+  flex: 1;
+  padding: 1rem;
+}
+
+.counter {
+  background: #f1f3f5;
+}

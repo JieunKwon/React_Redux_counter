@@ -1,4 +1,4 @@
-
+// ------------------- with React
 // import React, { Component } from 'react';
 // import Counter from 'components/Counter';
 //
@@ -12,6 +12,7 @@
 //
 // export default CounterContainer;
 
+// ------------------- with Redux
 import React, { Component } from 'react';
 import Counter from 'components/Counter';
 import { connect } from 'react-redux';
@@ -40,15 +41,14 @@ class CounterContainer extends Component {
   }
 }
 
-
 const mapStateToProps = (state) => ({
   number: state.counter.number
 });
-
 
 const mapDispatchToProps = (dispatch) => ({
   increment: () => dispatch(counterActions.increment()),
   decrement: () => dispatch(counterActions.decrement())
 })
-
+ 
+// connect()
 export default connect(mapStateToProps, mapDispatchToProps)(CounterContainer);
