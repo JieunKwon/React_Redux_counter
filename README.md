@@ -88,7 +88,7 @@ Combine any number of action types or action creators.
 
 For state of counter, can use handleAction instead of switch.
       
-        // If use switch, do action according to action type; increment and decrement
+        // If use reducer function, do action according to action type; increment and decrement
  
         export default function reducer(state = initialState, action){
 
