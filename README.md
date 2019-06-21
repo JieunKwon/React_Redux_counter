@@ -86,7 +86,7 @@ Combine any number of action types or action creators.
 
 > This counter app is used createAction and handleAction in src/store/modules/counter.js
 
-For state of counter, can use handleAction instead of switch.
+For state of counter, can use handleAction instead of reducer and switch.
       
         // If use reducer function, do action according to action type; increment and decrement
  
